@@ -26,6 +26,8 @@ mcp_server.log
 .pytest_cache/
 .coverage
 htmlcov/
+test_*.py
+tests/
 
 # IDE
 .vscode/
