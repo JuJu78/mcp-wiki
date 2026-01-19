@@ -110,6 +110,45 @@ et identifie :
 3. Les sujets les plus en croissance
 ```
 
+## 🧠 Wikidata (graphe de connaissances)
+
+### Exemple : Explorer une entité et ses relations
+
+**Prompt :**
+```
+Utilise mcp-wiki pour explorer l'entité Wikidata "Google" en français.
+Affiche :
+1) l'entité sélectionnée (id, label, description, url)
+2) les 20 entités liées les plus pertinentes
+3) les relations (claims) les plus fréquentes.
+```
+
+### Exemple : Deep dive (sitelinks + identifiants externes)
+
+**Prompt :**
+```
+Fais un deep dive Wikidata sur "Elon Musk" en français.
+Donne-moi :
+- les sitelinks (Wikipedia, Wikinews, etc.)
+- les identifiants externes disponibles (avec URLs)
+- un résumé des relations clés.
+```
+
+**Appel MCP :**
+```json
+{
+  "tool": "deep_dive_wikidata_topic",
+  "arguments": {
+    "query": "Elon Musk",
+    "language": "fr",
+    "search_limit": 5,
+    "max_linked_entities": 200,
+    "max_identifier_properties": 200,
+    "max_values_per_identifier": 5
+  }
+}
+```
+
 ## 📈 Visualisation des données
 
 ### Exemple 8 : Création de graphiques
