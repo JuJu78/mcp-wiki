@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mcp-wiki": {
+      "command": "python",
+      "args": ["C:\\path\\to\\mcp-wiki\\app.py"],
+      "cwd": "C:\\path\\to\\mcp-wiki",
+      "env": {
+        "PYTHONPATH": "C:\\path\\to\\mcp-wiki"
+      }
+    }
+  }
+}

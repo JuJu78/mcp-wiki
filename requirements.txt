@@ -1,0 +1,19 @@
+# Serveur MCP
+fastmcp                # Framework MCP rapide
+mcp[cli]              # SDK officiel MCP + CLI utilitaire
+
+# Web & HTTP
+requests              # Client HTTP simple
+httpx                 # Client HTTP async moderne
+beautifulsoup4        # Parser HTML pour extraction de liens
+lxml                  # Parser XML/HTML rapide pour BeautifulSoup
+
+# Environnement & configuration
+python-dotenv         # Charge les variables d'environnement depuis .env
+
+# Serveur web pour modes HTTP/SSE/ChatGPT
+fastapi               # Framework web moderne et rapide
+uvicorn               # Serveur ASGI pour FastAPI
+
+# Développement
+colorama              # Couleurs dans le terminal
